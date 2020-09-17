@@ -1,0 +1,23 @@
+ServerAliveInterval 120
+
+Host gray
+HostName graylab.jhu.edu
+User saipooja
+ForwardX11 yes
+
+Host jazz
+User saipooja
+ForwardAgent yes
+ProxyCommand ssh -Y graylab.jhu.edu nc %h %p
+
+Host marcc
+#User "smahajan4@jhu.edu"
+ForwardAgent yes
+ForwardX11 yes
+ProxyCommand ssh -Y login.marcc.jhu.edu -l smahaja4@jhu.edu nc %h %p
+
+Host comet
+#User "smahajan4@jhu.edu"
+ForwardAgent yes
+ForwardX11 yes
+ProxyCommand ssh -Y comet.sdsc.xsede.org -l saipooja nc %h %p
