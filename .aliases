@@ -1,0 +1,3 @@
+alias pymol=/Applications/PyMOL.app/Contents/MacOS/MacPyMOL
+alias gimp=/Applications/Gimp.app/Contents/MacOS/Gimp
+alias blastp=/usr/local/ncbi/blast/bin/blastp
